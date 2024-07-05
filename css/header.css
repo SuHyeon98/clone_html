@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 68px;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  font-family: 'SUITE-Regular';
+}
+
+.navwrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logobox {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  width: 75px;
+}
+
+.logobox > img {
+  width: 100%;
+  height: auto;
+}
+
+.navLeftList {
+  display: flex;
+  gap: 50px;
+}
+
+.navLeftList > li > a {
+  color: rgb(114, 114, 114);
+  font-size: large;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navRightList {
+  display: flex;
+  gap: 26px;
+}
+
+.navRightList > li > a {
+  color: gray;
+  font-size: medium;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLeftList > li > a:hover {
+  color: white;
+  font-weight: 600;
+}
+
+.navRightList > li > a:hover {
+  color: white;
+  font-weight: 600;
+}
+
+.iconbox {
+  display: flex;
+  gap: 40px;
+  color: white;
+  cursor: pointer;
+  padding-right: 25px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .navLeftList {
+    display: none;
+  }
+  .navRightList {
+    display: none;
+  }
+}
